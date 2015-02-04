@@ -9,12 +9,13 @@ From ATMs to kiosks to art installations, software applications drive a diverse 
 
 --
 
-###Learning Outcomes
+### Learning Outcomes
 Students will:
-Learn concepts and benefits of an iterative design and development process
-Implement agile methodologies for development and leverage issue/project tracking software
-Capture, harvest and reconcile interaction feedback from users and user groups; incorporate findings into evolution of project application design and functionality
-Learn how to implement webviews in application wrappers and frameworks
+
+* Learn concepts and benefits of an iterative design and development process
+* Implement agile methodologies for development and leverage issue/project tracking software
+* Capture, harvest and reconcile interaction feedback from users and user groups; incorporate findings into evolution of project application design and functionality
+* Learn how to implement webviews in application wrappers and frameworks
 
 --
 
