@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>TwitterBooth</title>
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/twitterbooth.css"/>
+	</head>
+	<body>
+		<audio class="chirp">
+			<source src="audio/chirp.mp3"></source>
+		</audio>
+		<audio class="shutter">
+			<source src="audio/shutter.mp3"></source>
+		</audio>
+		<div id="container">
+			<div id="loader" class="scene">
+				<img class="bird" src="img/Twitter_logo_blue.png" />
+			</div>
+			<div id="overlay" class="scene">
+				<img class="bird" src="img/Twitter_logo_blue.png" />
+				<h1>Start</h1>
+				<!-- <div class="buttons">
+					<button id="startGif" class="btn">Gif</button>
+					<button id="startVideo" class="btn right">Video</button>
+				</div> -->
+			</div>
+			<div id="interface" class="scene">
+				<img class="bird" src="img/Twitter_logo_blue.png" />
+				<div class="buttons">
+					<button id="back" class="btn">Retake</button>
+					<button id="next" class="btn right">Preview</button>
+				</div>
+				<!-- <div id="thumbs">
+					<div class="thumbsContainer"></div>
+				</div> -->
+				<!-- <div id="tweets">
+					<div class="tweetsContainer"></div>
+					<nav>
+						<button id="back" class="btn">Back to Preview</button>
+						<button id="next" class="btn">Add Your Name or @handle</button>
+					</nav>
+				</div>
+				<div id="handles">
+					<div class="handlesContainer"></div>
+					<nav>
+						<button id="back" class="btn">Back to your name or @Handle</button>
+						<button id="next" class="btn">Tweet!</button>
+					</nav>
+				</div -->
+			</div>
+			<div id="preview" class="scene">
+				<img src="" />
+				<div class="buttons" style="width:260px;">
+					<button id="back" class="btn">Retake</button>
+					<!-- <button id="next" class="btn right">Dropbox</button> -->
+				</div>
+			</div>
+			<div id="photobooth" class="scene">
+				<div id="countdown"></div>
+				<canvas id="monitor"></canvas>
+			</div>
+		</div>
+		<script src="js/lib/jquery.js"></script>
+		<script src="js/lib/jquery.transit.min.js"></script>
+		<script src="js/lib/oauthsimple.js"></script>
+		<script src="js/lib/simple-audio.js"></script>
+		<!-- script src="js/lib/RecordRTC.js"></script -->
+		<script src="js/lib/gif.js"></script>
+		<script src="js/lib/gif.worker.js"></script>
+		<script src="js/twitter.js"></script>
+		<script src="js/camera.js"></script>
+		<script src="js/canvasimage.js"></script>
+		<script src="js/dropboxbooth.js"></script>
+		<script src="js/twitterbooth.js"></script>
+	</body>
+</html>

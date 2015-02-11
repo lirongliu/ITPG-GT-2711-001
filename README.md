@@ -52,14 +52,20 @@ Suggested locations to visit:
 --
 
 ##### Week 2 | 2/11 - Designing Interactions
-Discuss results of Assignment #1 and whiteboard the various sites visited. In-depth analysis of the process behind each execution will be explored.
-
-Case Study: RAA Media’s Interactive Multi-User Touch Table for the Eaton Experience Center
-The entire creation process will be presented, from design brief to user group testing to installation.
+Discuss results of Assignment #1 and whiteboard the various sites visited; capture the type of input methods each implements.
 
 Overview of basic user event inputs and event types; the mouse and touch parallel, multi-touch, sensors, etc. Discussion of how to handle these events in an application and the problems that arise from real-world scenarios. 
 
-Workshop: Quick prototyping of gesture interactions in a web development sandbox.
+Workshop 1: Simple photobooth web app example
+
+Review brainstorming concepts from Week 1 and select the 3-4 most vialble concepts and discuss parameters of viability. 
+Students will form into groups based on which of the 3-4 concepts they would like to work on most.
+
+BREAK
+
+Workshop 2: Daft Punk Konsole example. In groups, students will concept interesting ways to extend the Daft Punk Konsole and implement.
+
+Case Study: RAA Media’s Interactive Multi-User Touch Table for the Eaton Experience Center
 
 Assignment #2: Prototype a basic web application which reacts to a complicated user input to trigger a resulting behavior. The user input can be any combination of mouse interactions, touch interactions, gestures, or sequences. More elaborate executions can extend to keyboard input, or even leveraging cameras and sensors.
 
