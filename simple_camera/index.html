@@ -16,12 +16,22 @@
 				</div>
 			</div>
 			<div id="camera" class="scene">
+				<video id="video" width="320" height="240" preload autoplay loop muted></video>
+				<canvas id="canvas"></canvas>
 				<canvas id="monitor"></canvas>
 			</div>
 		</div>
+		<!-- face detection -->
+		<script src="js/lib/tracking/tracking.js"></script>
+		<script src="js/lib/tracking/data/face-min.js"></script>
+		<script src="js/lib/tracking/data/eye-min.js"></script>
+		<script src="js/lib/tracking/data/mouth-min.js"></script>
+		<!-- core application -->
 		<script src="js/jquery.js"></script>
 		<script src="js/camera.js"></script>
 		<script src="js/canvasimage.js"></script>
 		<script src="js/script.js"></script>
+
+
 	</body>
 </html>
