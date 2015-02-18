@@ -12,7 +12,7 @@ h1 {
 	width: 100%;
 	font-size: 350%;
 	margin: 0;
-	line-height: 120%;
+	line-height: 0;
 
 	font-family: sans-serif;
 	letter-spacing: 0px;
