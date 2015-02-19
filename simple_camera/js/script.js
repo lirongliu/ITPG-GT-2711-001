@@ -14,6 +14,10 @@ var cameraWidth = 960;
  */
 var cameraHeight = 720;
 
+/**
+ *
+ */
+var tracker;
 
 /************************************************/
 
@@ -25,8 +29,15 @@ var CameraApp = {
      */
     init: function()
     {
-        camera = new Camera();
-        camera.startCapture(this.onCameraReady.bind(this), this.onCameraError);
+        // camera = new Camera();
+        // camera.startCapture(this.onCameraReady.bind(this), this.onCameraError);
+
+        tracker = new tracking.ObjectTracker('face');
+        tracker.setInitialScale(4);
+        tracker.setStepSize(2);
+        tracker.setEdgesDensity(0.1);
+
+        tracking.track('#video', tracker, { camera: true });
 
         this.start();
     },
@@ -65,8 +76,30 @@ var CameraApp = {
      * Call the onNewFrame function, but set the camera mode to be ON before making the call
      */
     startCamera: function() {
+        $('#start').hide();
+
         this.cameraEnabled = true;
-        this.onNewFrame();
+        // this.onNewFrame();
+
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+
+        $('#smiley').css({
+            'z-index':'10'
+        });
+
+        tracker.on('track', function(event) {
+
+            event.data.forEach(function(face) {
+                $('#smiley img').css({
+                    'left':face.x + $('#video').offset().left,
+                    'top':face.y + $('#video').offset().top,
+                    'width':face.width,
+                    'height':face.height
+                });
+            });
+
+        });
     },
 
     /**

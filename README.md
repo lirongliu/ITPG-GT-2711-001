@@ -67,20 +67,31 @@ Workshop 2: Daft Punk Konsole example. In groups, students will concept interest
 
 Case Study: RAA Media’s Interactive Multi-User Touch Table for the Eaton Experience Center
 
-Assignment #2: Prototype a basic web application which reacts to a complicated user input to trigger a resulting behavior. The user input can be any combination of mouse interactions, touch interactions, gestures, or sequences. More elaborate executions can extend to keyboard input, or even leveraging cameras and sensors.
+Assignment #2: Experiment with the Simple Camera app. Think about what you would change with its current implementation, and about what types of functionality you would want to add to it as a next step. Extended functionality can range from simply re-creating the animated GIF factory you saw in the Twitter demo, to adding support for capturing and rendering video clips, to creating new interactions via user input events.
 
 --
 
 ##### Week 3 | 2/18 - Development Platforms
-Share and discuss applications created from Assignment #2. Discuss how to elaborate on functionality and purpose.
+Discuss trending ideas generated from Assignment #2:
+
+* Face detection
+* WebKit filters
+
+Workshop: Walkthrough/tutorial of adding face detection to the simple camera app. Git branching will also be briefly discussed. Second part of workshop will add a webkit filter tool to the app.
+
+Discussion of how application screens and components can be configured and integrated. Webviews and their use in kiosks will be discussed, along with the pros and cons of using webviews in isolated and distributed systems. We will discuss using Kiosk mode for Chrome applications, node webkit and Cocoa applications as webview wrappers. 
+
+Workshop: Create all 3 application variants of the camera app.
+
+BREAK
 
 Workshop: Students will create a “matrix” of what specific behaviors to capture in their application prototype. A tracking system such as Flurry or Google Analytics will be overviewed.
 
-Discussion of how application screens and components can be configured and integrated. Web Views and their use in kiosks will be discussed, along with the pros and cons of using web views in isolated and distributed systems. We will discuss using Kiosk mode for Chrome applications, node webkit and Cocoa applications as web view wrappers. 
+Discussion of tracking systems such as Google Analytics and Flurry and a walkthrough demonstration of how to implement in a webview.
 
 ---
 
-Assignment #3: Expand on the web app created in Assignment #2 to add tracking and metrics capturing, and have the app used and tested. Plan, provision and execute a simple deployment option to allow application interaction and therefore capture meaningful data. 
+Assignment #3: Expand on the web app created in class to add tracking and metrics capturing. Plan and execute a simple deployment of the app prototype to allow for user interactions and therefore capture meaningful data. 
 
 --
 

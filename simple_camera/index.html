@@ -7,21 +7,32 @@
 	<body>
 		<div id="container">
 			<div id="start" class="scene">
-				<h1>CLICK TO START</h1>
+				<h1>START</h1>
 			</div>
 			<div id="preview" class="scene">
 				<img src="" />
 				<div class="buttons" style="width:260px;">
-					<button id="back" class="btn">Retake</button>
+					<button id="back" class="btn">RESTART</button>
 				</div>
 			</div>
 			<div id="camera" class="scene">
+				<div id="smiley"><img src="img/smiley.png" /></div>
+				<video id="video" width="320" height="240" preload autoplay loop muted></video>
+				<canvas id="canvas"></canvas>
 				<canvas id="monitor"></canvas>
 			</div>
 		</div>
+		<!-- face detection -->
+		<script src="js/lib/tracking/tracking.js"></script>
+		<script src="js/lib/tracking/data/face-min.js"></script>
+		<script src="js/lib/tracking/data/eye-min.js"></script>
+		<script src="js/lib/tracking/data/mouth-min.js"></script>
+		<!-- core application -->
 		<script src="js/jquery.js"></script>
 		<script src="js/camera.js"></script>
 		<script src="js/canvasimage.js"></script>
 		<script src="js/script.js"></script>
+
+
 	</body>
 </html>
