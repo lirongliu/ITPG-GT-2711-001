@@ -12,7 +12,7 @@ chrome.windows.getCurrent(null, function(win) {
 /**
  * width of on-screen 'preview' video in pixels
  */
-var cameraWidth = 920983547307560;
+var cameraWidth = 960;
 
 /**
  * height of on-screen 'preview' video in pixels
