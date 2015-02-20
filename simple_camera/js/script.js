@@ -12,7 +12,7 @@ chrome.windows.getCurrent(null, function(win) {
 /**
  * width of on-screen 'preview' video in pixels
  */
-var cameraWidth = 1960;
+var cameraWidth = 960;
 
 /**
  * height of on-screen 'preview' video in pixels
@@ -92,6 +92,62 @@ var CameraApp = {
         $('#smiley').css({
             'z-index':'10'
         });
+        $('#Maria').css({
+            'z-index':'10',
+            'max-width': '5%',
+            'max-height': '10%',
+            'bottom': '0',
+            'left': '-240px',
+            'margin': 'auto', 
+            'overflow': 'auto',
+            'position': 'fixed',
+            'right': '0',
+            'top': '-140px',
+            'border-style': 'solid',
+            'border-color': '#ffffff'
+        });
+        $('#Will').css({
+            'z-index':'10',
+            'max-width': '5%',
+            'max-height': '10%',
+            'bottom': '0',
+            'left': '240px',
+            'margin': 'auto', 
+            'overflow': 'auto',
+            'position': 'fixed',
+            'right': '0',
+            'top': '-140px',
+            'border-style': 'solid',
+            'border-color': '#ffffff'
+        });
+        $('#ITP').css({
+            'z-index':'10',
+            'max-width': '5%',
+            'max-height': '10%',
+            'bottom': '-260px',
+            'left': '240px',
+            'margin': 'auto', 
+            'overflow': 'auto',
+            'position': 'fixed',
+            'right': '0',
+            'top': '-140px',
+            'border-style': 'solid',
+            'border-color': '#ffffff'
+        });
+        $('#Zhen').css({
+            'z-index':'10',
+            'max-width': '5%',
+            'max-height': '10%',
+            'bottom': '-260px',
+            'left': '-240px',
+            'margin': 'auto', 
+            'overflow': 'auto',
+            'position': 'fixed',
+            'right': '0',
+            'top': '-140px',
+            'border-style': 'solid',
+            'border-color': '#ffffff'
+        });
 
         tracker.on('track', function(event) {
 
@@ -102,6 +158,21 @@ var CameraApp = {
                     'width':face.width,
                     'height':face.height
                 });
+            //Make boxes relative to video preview width/height
+            if(face.x>150 && face.y<50){
+                window.location.href = 'http://willjfield.com';
+            }
+            if(face.x<50 && face.y<50){
+                window.location.href = 'http://www.mariafangitp.com/';
+            }
+            if(face.x<50 && face.y>100){
+                window.location.href = 'http://www.kathsome.com/itp2014/';
+            }
+            if(face.x>150 && face.y>100){
+                window.location.href = 'http://itp.nyu.edu/itp/';
+            }
+                console.log("x: "+face.x);
+                console.log("y: "+face.y)
             });
 
         });
