@@ -5,6 +5,19 @@
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
+		<style>
+				#video {
+			    transform: rotateY(180deg);
+			    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+			    -moz-transform:rotateY(180deg); /* Firefox */
+				}
+				#restart {
+					z-index: 10;
+				}
+				#canvas {
+					z-index: 2;
+				}
+				</style>
 		<div id="container">
 			<div id="start" class="scene">
 				<h1>START</h1>
@@ -15,10 +28,13 @@
 					<button id="back" class="btn">RESTART</button>
 				</div>
 			</div>
+			<div id="score" >Elapsed Time: 0s</div>
+			<div id="bestScore" >Best: 0s</div>
+			<!-- <button id="restart" onclick="restart()">Click me</button> -->
 			<div id="camera" class="scene">
-				<div id="smiley"><img src="img/smiley.png" /></div>
+				<!-- <div id="smiley"><img src="img/smiley.png" /></div> -->
 				<video id="video" width="320" height="240" preload autoplay loop muted></video>
-				<canvas id="canvas"></canvas>
+				<canvas id="canvas" style="border:1px solid #c3c3c3;"></canvas>
 				<canvas id="monitor"></canvas>
 			</div>
 		</div>
@@ -31,6 +47,7 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/camera.js"></script>
 		<script src="js/canvasimage.js"></script>
+		<script src="js/model.js"></script>
 		<script src="js/script.js"></script>
 
 
