@@ -117,7 +117,7 @@ var CameraApp = {
 
                         // console.log("face: " + face.x + " " + face.y + " " + face.width + " " + face.height);
                         // console.log("center: " + (face.x + face.width / 2) + " " + (face.y + face.height / 2));
-                        var multiplier = 1 + (new Date().getTime() - startTime) / 1000 / 15;
+                        var multiplier = 3 + (new Date().getTime() - startTime) / 1000 / 15;
                         ax = -((face.x + face.width / 2) - videoWidth / 2) / videoWidth * multiplier;
                         ay = ((face.y + face.height / 2) - videoHeight / 2) / videoHeight * multiplier;
                         last_a.x = ax;
